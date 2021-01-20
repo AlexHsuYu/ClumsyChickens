@@ -13,39 +13,39 @@ This repository implements a few backboned version of Mask R-CNN to detect broil
 * mobilenetV2
 
 ## Getting started
->## pipenv
+>#### pipenv
     git clone https://github.com/AlexHsuYu/ClumsyChickens.git
     cd ClumsyChickens
     pipenv --python3.5
     pipenv -r requirements.txt
->## train a new model starting from ImageNet weights
+>#### train a new model starting from ImageNet weights
     python3 cockheads.py train --dataset=/path/to/dataset --subset=train --weights=imagenet
->## train a new model starting from specific weights file
+>#### train a new model starting from specific weights file
     python3 cockheads.py train --dataset=/path/to/dataset --subset=train --weights=/path/to/weights.h5
->## test
+>#### test
     python3 cockheads.py detect --dataset=/path/to/datasets --subset=stage1_test --weights=/path/to/weight.h5
->## average precision calculation
+>#### average precision calculation
     python AP.py detect --weights=/path/to/weight.h5 --dataset=/path/to/datasets --subset=val
->## vidoe demo
+>#### vidoe demo
     python main.py
 
 ## results
 
->### 6 week
-<div style="float:left;border:solid 1px 000;margin:2px;"><img src="assets/6week_1.png" width="295" height="166" ></div>
-<div style="float:left;border:solid 1px 000;margin:2px;"><img src="assets/6week.png" width="295" height="166" ></div>
-<div style="float:none;clear:both;">
+>#### 6 week
+<p float="left">
+  <img src="assets/6week.png" width="400" />
+  <img src="assets/6week_1.png" width="400" />
+</p>
 
->### 14 week
-<div style="float:none;clear:both;">
-<div style="float:left;border:solid 1px 000;margin:2px;"><img src="assets/14week_1.png" width="295" height="166" ></div>
-<div style="float:left;border:solid 1px 000;margin:2px;"><img src="assets/14week.png" width="295" height="166" ></div></div>
-<div style="float:none;clear:both;">
+>#### 14 week
+<p float="left">
+  <img src="assets/14week.png" width="400" />
+  <img src="assets/14week_1.png" width="400" />
+</p>
 
->### video demo
+>#### video demo
 ![preview](assets/demo.gif)
 
 ## License
-
 ClumsyChickens is released under the MIT license. See the [LICENSE](/LICENSE) file for details.
 
