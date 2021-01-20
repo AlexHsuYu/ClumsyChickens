@@ -14,7 +14,7 @@ This repository implements a few backboned version of Mask R-CNN to detect broil
 
 ## Getting started
 >## pipenv
-    git clone https://github.com/arturgontijo/YOLOv3-MNIST.git
+    git clone https://github.com/AlexHsuYu/ClumsyChickens.git
     cd ClumsyChickens
     pipenv --python3.5
     pipenv -r requirements.txt
